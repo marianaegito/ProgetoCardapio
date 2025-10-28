@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Menu from  './components/Menu'
 import Categorias from  './components/Categorias'
-import BD from './data/dados'
+import BD from './data/dados.js'
 
 // OBTÉM TODAS AS CATEGORIAS UNICAS DO MENU, ADICIONADO "TODOS " NO INICIO DA PÁGINA
 const todasCategorias=["todos",...new Set(BD.map((item)=>item.categoria))]
